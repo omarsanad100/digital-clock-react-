@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #1f4037, #99f2c8);
+}
+
+.clock {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.clock span {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 5vw;
+  color: #fff;
+  letter-spacing: 0.1em;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+  .clock span {
+    font-size: 8vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .clock {
+    padding: 15px 30px;
+  }
+
+  .clock span {
+    font-size: 10vw;
+  }
+}
